@@ -2,7 +2,7 @@ crypto-pkcs7-example
 ====================
 
 An example taken from the site below for posteriety (requires pycrypto)
-and getting up to speed quickly
+and getting up to speed
 
     from Crypto.Cipher import AES
     from pkcs7 import PKCS7Encoder
@@ -27,10 +27,13 @@ and getting up to speed quickly
     print enc_cipher
 
 There isn't an offical release per se, but to use it with pip add the following to your requirements.txt file:
--e git+https://github.com/owenfi/crypto-pkcs7-example.git#egg=pkcs
+
+`-e git+https://github.com/owenfi/crypto-pkcs7-example.git#egg=pkcs`
 
 or
--e git+https://github.com/owenfi/crypto-pkcs7-example.git@15180eeacab6fbc5772cf7fd6687dd712e5d763b#egg=pkcs-master
+
+`-e git+https://github.com/owenfi/crypto-pkcs7-example.git@15180eeacab6fbc5772cf7fd6687dd712e5d763b#egg=pkcs-master`
+
 to get a specific release
 
 Example of sharing encrypted information between Python and the .NET Framework. It contains a Python implementation of RFC 2315 PKCS#7 encoding. It also contains a Python implementation of RFC 2437 PKCS1-v1_5 encoding and PKCS1-v2.0 (OAEP) encoding. In this example, the data is encrypted in Python and decrypted using the .NET Framework and the C# language.
